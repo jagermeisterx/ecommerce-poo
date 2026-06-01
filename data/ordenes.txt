@@ -1,0 +1,6 @@
+===== ORDEN (2026-06-01 14:50:52) =====
+Cliente: pepe
+  - Polera básica x5 ($9,990 c/u) = $49,950
+  - Ampolleta LED x1 ($2,500 c/u) = $2,500
+TOTAL: $52,450
+
