@@ -1,5 +1,7 @@
 # 🛒 Ecommerce CLI – Módulo 4 (POO y roles)
 
+[![GitHub](https://img.shields.io/badge/Repositorio-GitHub-blue)](https://github.com/jagermeisterx/ecommerce-poo)
+
 Aplicación de consola en **Python 3** que simula una tienda online, ahora
 reestructurada con **Programación Orientada a Objetos**, **roles** (ADMIN y
 CLIENTE), **herencia**, **composición**, **manejo de excepciones** y
@@ -39,6 +41,49 @@ cd ecommerce
 python main.py
 ```
 > En algunos sistemas usa `python3` en lugar de `python`.
+
+## 🕹️ Cómo usar el programa
+
+Al iniciar el programa se te pedirá elegir un **rol**:
+
+- **`admin`** — para gestionar el catálogo (listar, crear, actualizar, eliminar productos y guardar cambios).
+- **`cliente`** — para navegar el catálogo, buscar productos, armar un carrito y confirmar la compra.
+
+Escribe `admin` o `cliente` según el rol que quieras usar y presiona Enter. Se mostrará un menú con las opciones disponibles para ese rol. Para salir del programa elige la opción **Salir** (generalmente la opción `0` o `6` según el menú).
+
+### Ejemplo de uso como ADMIN
+
+```
+$ python main.py
+¿Eres admin o cliente? admin
+
+--- Menú ADMIN ---
+1. Listar productos
+2. Crear producto
+3. Actualizar producto
+4. Eliminar producto
+5. Guardar catálogo en archivo
+0. Salir
+Selecciona una opción: 1
+```
+
+### Ejemplo de uso como CLIENTE
+
+```
+$ python main.py
+¿Eres admin o cliente? cliente
+
+--- Menú CLIENTE ---
+1. Ver catálogo
+2. Buscar por nombre o categoría
+3. Agregar al carrito
+4. Ver carrito y total
+5. Confirmar compra
+0. Salir
+Selecciona una opción: 1
+```
+
+> Los datos persisten entre ejecuciones: el catálogo se guarda en `data/catalogo.csv` y las órdenes se registran en `data/ordenes.txt`.
 
 ---
 
